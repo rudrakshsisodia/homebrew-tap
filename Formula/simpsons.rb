@@ -11,7 +11,7 @@ class Simpsons < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/rudrakshsisodia/simpsons/releases/download/v0.1.3/simpsons_0.1.3_darwin_amd64.tar.gz"
-      sha256 "be6b5ae682c9a3f52f2c91f281fd057a6a4b128464144eca560e3063d887db24"
+      sha256 "eb5a54c416b0adc8a2db084f63392fcaaaf72b2fd2b385d422e217e7ace21920"
 
       define_method(:install) do
         bin.install "simpsons"
@@ -19,7 +19,7 @@ class Simpsons < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/rudrakshsisodia/simpsons/releases/download/v0.1.3/simpsons_0.1.3_darwin_arm64.tar.gz"
-      sha256 "9ce552623ead3bbe02003c4949d737ae44ec7d7b71a39524d5cdd6003c3be9f3"
+      sha256 "1199952371ed3da27ecda0a980de79a491659191ad06b6fb9f31fefc73932457"
 
       define_method(:install) do
         bin.install "simpsons"
@@ -30,14 +30,14 @@ class Simpsons < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/rudrakshsisodia/simpsons/releases/download/v0.1.3/simpsons_0.1.3_linux_amd64.tar.gz"
-      sha256 "740d759e62b35ae72f233be80dd9501a68156accc71a2649c2ee6e1defd57956"
+      sha256 "8cd5deb40ee71755b352e8f932f8a7d7163be9b7301880b476bcbdde77967ebf"
       define_method(:install) do
         bin.install "simpsons"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/rudrakshsisodia/simpsons/releases/download/v0.1.3/simpsons_0.1.3_linux_arm64.tar.gz"
-      sha256 "021168ec050ba8f49ee1e7143f0b800fe0a0b6901e2330d4f4053e8e092d6b8f"
+      sha256 "72658361c5e30dfff94a5a7f1539dcac9c318c20c4ead9511ed3db3797fee72c"
       define_method(:install) do
         bin.install "simpsons"
       end
