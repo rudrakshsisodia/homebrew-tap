@@ -5,21 +5,21 @@
 class Simpsons < Formula
   desc "TUI analytics dashboard for Claude Code sessions"
   homepage "https://github.com/rudrakshsisodia/simpsons"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rudrakshsisodia/simpsons/releases/download/v0.1.3/simpsons_0.1.3_darwin_amd64.tar.gz"
-      sha256 "eb5a54c416b0adc8a2db084f63392fcaaaf72b2fd2b385d422e217e7ace21920"
+      url "https://github.com/rudrakshsisodia/simpsons/releases/download/v0.1.4/simpsons_0.1.4_darwin_amd64.tar.gz"
+      sha256 "8edbd8c52b78b2be2971213659d5c4ec38242de19ce176930cc71f0e36f312f6"
 
       define_method(:install) do
         bin.install "simpsons"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rudrakshsisodia/simpsons/releases/download/v0.1.3/simpsons_0.1.3_darwin_arm64.tar.gz"
-      sha256 "1199952371ed3da27ecda0a980de79a491659191ad06b6fb9f31fefc73932457"
+      url "https://github.com/rudrakshsisodia/simpsons/releases/download/v0.1.4/simpsons_0.1.4_darwin_arm64.tar.gz"
+      sha256 "630988d7b69f8f88112034ac35e2521302fa6fd2171234067d40359c775de432"
 
       define_method(:install) do
         bin.install "simpsons"
@@ -29,15 +29,15 @@ class Simpsons < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rudrakshsisodia/simpsons/releases/download/v0.1.3/simpsons_0.1.3_linux_amd64.tar.gz"
-      sha256 "8cd5deb40ee71755b352e8f932f8a7d7163be9b7301880b476bcbdde77967ebf"
+      url "https://github.com/rudrakshsisodia/simpsons/releases/download/v0.1.4/simpsons_0.1.4_linux_amd64.tar.gz"
+      sha256 "b947dcd66ffbdd4f2cb129a908d75f491a7b528c227ebad39ab0a4c1295cd532"
       define_method(:install) do
         bin.install "simpsons"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rudrakshsisodia/simpsons/releases/download/v0.1.3/simpsons_0.1.3_linux_arm64.tar.gz"
-      sha256 "72658361c5e30dfff94a5a7f1539dcac9c318c20c4ead9511ed3db3797fee72c"
+      url "https://github.com/rudrakshsisodia/simpsons/releases/download/v0.1.4/simpsons_0.1.4_linux_arm64.tar.gz"
+      sha256 "49b43043c4b82cd729c20a5100f398460d3a9ecf7db4adfa3a1579111491cd1a"
       define_method(:install) do
         bin.install "simpsons"
       end
