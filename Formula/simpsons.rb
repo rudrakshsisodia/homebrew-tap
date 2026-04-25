@@ -1,26 +1,26 @@
 class Simpsons < Formula
   desc "TUI analytics dashboard for Claude Code sessions"
   homepage "https://github.com/rudrakshsisodia/simpsons"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/rudrakshsisodia/simpsons/releases/download/v0.1.1/simpsons_0.1.1_darwin_arm64.tar.gz"
-      sha256 "3db19769a1ec6b537ae9bf0a68adf7ccc864da0becbaa775b3db721385419a0f"
+      url "https://github.com/rudrakshsisodia/simpsons/releases/download/v0.1.2/simpsons_0.1.2_darwin_arm64.tar.gz"
+      sha256 "2c7908e00717e7025e104cc06cffb1f4765a624c2208109511064dd880d639fb"
     else
-      url "https://github.com/rudrakshsisodia/simpsons/releases/download/v0.1.1/simpsons_0.1.1_darwin_amd64.tar.gz"
-      sha256 "417c52b3f8865c692d98187f3ca574c9c3497f1f2e6d8fcac19d348da3425c06"
+      url "https://github.com/rudrakshsisodia/simpsons/releases/download/v0.1.2/simpsons_0.1.2_darwin_amd64.tar.gz"
+      sha256 "81494b4cf050664843d1cc5c3ddc4c094a922d96155826065e4880b57f67c66d"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/rudrakshsisodia/simpsons/releases/download/v0.1.1/simpsons_0.1.1_linux_arm64.tar.gz"
-      sha256 "20e4fbaf3f1c5f5444dc128bdc2026538b500483023331f359165ba4ab991891"
+      url "https://github.com/rudrakshsisodia/simpsons/releases/download/v0.1.2/simpsons_0.1.2_linux_arm64.tar.gz"
+      sha256 "c42791d85ac2681157019cb6a4900380d78e3da3020ba0525d4079a801f23b6b"
     else
-      url "https://github.com/rudrakshsisodia/simpsons/releases/download/v0.1.1/simpsons_0.1.1_linux_amd64.tar.gz"
-      sha256 "9d94fb28831195805972dc2f17f824a6f128f0a78272d4d572a1389000ffd8f9"
+      url "https://github.com/rudrakshsisodia/simpsons/releases/download/v0.1.2/simpsons_0.1.2_linux_amd64.tar.gz"
+      sha256 "178ebe50b7ea35bca2d0ee369540554f54052754eca1971cc867966620f82397"
     end
   end
 
